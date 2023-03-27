@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <!-- LOGO -->
+      <div class="image-container">
+        <img src="./alarm clock.svg" alt="" />
+      </div>
+
+      <!-- LIVE CLOCK DISPLAY-->
+      <div class="live-time-container">
+        <span id="hour">00 </span>
+        <span>:</span>
+        <span id="minute">00 </span>
+        <span>:</span>
+        <span id="second">00 </span>
+        <span class="am-pm" id="session">AM</span>
+      </div>
+
+      <!-- SET ALARM INPUTS -->
+      <div class="set-alarm">
+        <input
+          type="number"
+          min="0"
+          max="12"
+          placeholder="Hours"
+          id="hour-input"
+        />
+        <input
+          type="number"
+          min="0"
+          max="60"
+          placeholder="Minutes"
+          id="minute-input"
+        />
+        <select name="" id="session-input">
+          <option value="AM">AM</option>
+          <option value="PM">PM</p></option>
+        </select>
+      </div>
+
+      <!-- set alarm button -->
+      <div class="set-alarm-button">
+        <button id="set-alarm">Set Alarm</button>
+      </div>
+
+      <!-- Alarm list  -->
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
